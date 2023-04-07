@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        margin: 0;
+      }
+      .box-converter {
+        background-color: black;
+        margin: 0 auto 0;
+        width: 400px;
+        height: 300px;
+        color: white;
+        padding: 30px 15px;
+      }
+      h2,
+      p {
+        color: grey;
+      }
+      .first-convert-block,
+      .second-convert-block {
+        border: 1px solid grey;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-converter">
+      <h2 id="dollarInput">1 доллар США равно</h2>
+      <h1 id="rubOutput">80.67 Российский рубль</h1>
+      <p>23 янв., 11:08 UTC &middot; Отказ от обязательств</p>
+      <div class="first-convert-block">
+        <input id="first-input" value="1" type="number" min="0" />
+        <select id="cur1">
+          <option value="dollar">Доллар США</option>
+          <option value="ruble">Российский рубль</option>
+        </select>
+      </div>
+      <div class="second-convert-block">
+        <input id="second-input" value="80.67" type="number" min="0" />
+        <select id="cur2">
+          <option value="ruble">Российский рубль</option>
+          <option value="dollar">Доллар США</option>
+        </select>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
